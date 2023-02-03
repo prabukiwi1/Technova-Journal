@@ -429,7 +429,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/bg_science.jpg") top center;
   background-size: cover;
   position: relative;
   padding: 0;
@@ -559,7 +559,7 @@ h6 {
 #hero_about {
   width: 100%;
   height: 50vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/bg_science.jpg") top center;
   background-size: cover;
   position: relative;
   padding: 0;
