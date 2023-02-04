@@ -1497,11 +1497,18 @@ section {
 }
 
 .team .member .pic {
+  position: absolute;
+  top:-100px;
+  left: 200px;
   overflow: hidden;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  z-index: 9999;
 }
 
 .team .member .member-info {
-  position: absolute;
+  /*position: absolute;*/
   bottom: -50px;
   left: 20px;
   right: 20px;
@@ -1514,10 +1521,11 @@ section {
 }
 
 .team .member h4 {
-  font-weight: 700;
+  margin-top: 80px;
+  font-weight: bolder;
   margin-bottom: 10px;
   font-size: 16px;
-  color: #15222b;
+  color: #000000;
   position: relative;
   padding-bottom: 10px;
 }
@@ -1534,9 +1542,9 @@ section {
 }
 
 .team .member span {
-  font-style: italic;
+  /*font-style: italic;*/
   display: block;
-  font-size: 13px;
+  font-size: 18px;
 }
 
 .team .member .social {
