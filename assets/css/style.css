@@ -9,8 +9,13 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
   color: #444444;
+  letter-spacing: 2px;
+}
+
+p{
+  text-align: justify;
 }
 
 a {
@@ -129,6 +134,7 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
+  border-bottom: 4px solid #ff4a17;
 }
 
 #header.header-scrolled,
@@ -151,7 +157,7 @@ h6 {
 }
 
 #header .logo img {
-  max-height: 40px;
+  max-height: 90px;
 }
 
 /*--------------------------------------------------------------
@@ -188,7 +194,7 @@ h6 {
   position: relative;
   justify-content: space-between;
   padding: 0 3px;
-  font-size: 14px;
+  font-size: 17px;
   text-transform: uppercase;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.9);
@@ -429,21 +435,23 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/bg_science.jpg") top center;
-  background-size: cover;
+  background: url("../img/stindex.png") center;
+  background-size: contain;
   position: relative;
   padding: 0;
 }
 
 #hero:before {
   content: "";
-  background: rgba(13, 20, 26, 0.7);
+  background: rgba(13, 20, 26, 0);
   position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
 }
+
+
 
 #hero .hero-container {
   position: absolute;
@@ -499,6 +507,10 @@ h6 {
   color: #fff;
   background: #ff4a17;
   border: 2px solid #ff4a17;
+}
+
+.mrq{
+  color: #c22b00;
 }
 
 #hero .btn-get-started:hover {
@@ -558,14 +570,23 @@ h6 {
 --------------------------------------------------------------*/
 #hero_about {
   width: 100%;
-  height: 50vh;
-  background: url("../img/bg_science.jpg") top center;
+  height: 20vh;
+  background: url("../img/stindex.png") top center;
   background-size: cover;
   position: relative;
   padding: 0;
 }
 
-#hero_about:before {
+#hero_about2{
+  width: 100%;
+  height: 50vh;
+  background: url("../img/stindex.png") top center;
+  background-size: cover;
+  position: relative;
+  padding: 0;
+}
+
+#hero_about:before, #hero_about2:before {
   content: "";
   background: rgba(13, 20, 26, 0.7);
   position: absolute;
@@ -575,7 +596,7 @@ h6 {
   right: 0;
 }
 
-#hero_about .hero-container {
+#hero_about .hero-container, #hero_about2 .hero-container {
   position: absolute;
   bottom: 0;
   top: 0;
@@ -588,7 +609,7 @@ h6 {
   text-align: center;
 }
 
-#hero_about h1 {
+#hero_about h1, #hero_about2 h1  {
   margin: 0 0 10px 0;
   font-size: 48px;
   font-weight: 700;
@@ -597,13 +618,13 @@ h6 {
   color: #fff;
 }
 
-#hero_about h2 {
+#hero_about h2, #hero_about2 h2 {
   color: #eee;
   margin-bottom: 50px;
   font-size: 24px;
 }
 
-#hero_about .btn-get-started {
+#hero_about .btn-get-started, #hero_about2 .btn-get-started {
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
@@ -641,7 +662,7 @@ h6 {
   background: rgba(255, 255, 255, 0.1);
 }
 
-#hero_about .btn-watch-video {
+#hero_about .btn-watch-video, #hero_about2 .btn-watch-video {
   font-size: 16px;
   display: inline-block;
   transition: 0.5s;
@@ -662,6 +683,14 @@ h6 {
 
 #hero_about .btn-watch-video:hover i {
   color: #ff4a17;
+}
+
+.aboutimg{
+  object-fit: cover;
+}
+
+.aboutimg img{
+  width: 100%;
 }
 
 @media (min-width: 1024px) {
@@ -721,14 +750,21 @@ section {
   margin: 4px 10px;
 }
 
+.bgimg{
+  background-image: url("/assets/img/stindex.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .section-title p {
   margin: 0;
   /*margin-top: 1em;*/
   font-size: 18px;
   font-weight: 400;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-family: "Poppins", sans-serif;
-  color: #263d4d;
+  color: #000000;
 }
 
 .journal-keywords{
@@ -1159,7 +1195,7 @@ section {
 }
 
 .services .icon-box h4 a {
-  color: #365870;
+  color: black;
   transition: 0.3s;
 }
 
