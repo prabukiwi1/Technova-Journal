@@ -119,11 +119,23 @@
     this.classList.toggle('bi-x')
   })
 
+  on('click', '.mobile-nav-toggle2', function(e) {
+    select('#navbar2').classList.toggle('navbar-mobile')
+    this.classList.toggle('bi-list')
+    this.classList.toggle('bi-x')
+  })
+
   /**
    * Mobile nav dropdowns activate
    */
   on('click', '.navbar .dropdown > a', function(e) {
-    if (select('#navbar').classList.contains('navbar-mobile')) {
+    if (select('#navbar ').classList.contains('navbar-mobile')) {
+      e.preventDefault()
+      this.nextElementSibling.classList.toggle('dropdown-active')
+    }
+  }, true)
+  on('click', '.navbar .dropdown > a', function(e) {
+    if (select('#navbar2').classList.contains('navbar-mobile')) {
       e.preventDefault()
       this.nextElementSibling.classList.toggle('dropdown-active')
     }
