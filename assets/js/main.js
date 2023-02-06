@@ -129,12 +129,12 @@
    * Mobile nav dropdowns activate
    */
   on('click', '.navbar .dropdown > a', function(e) {
-    if (select('#navbar ').classList.contains('navbar-mobile')) {
+    if (select('#navbar').classList.contains('navbar-mobile')) {
       e.preventDefault()
       this.nextElementSibling.classList.toggle('dropdown-active')
     }
   }, true)
-  on('click', '.navbar .dropdown > a', function(e) {
+  on('click', '#navbar2 .dropdown > a', function(e) {
     if (select('#navbar2').classList.contains('navbar-mobile')) {
       e.preventDefault()
       this.nextElementSibling.classList.toggle('dropdown-active')

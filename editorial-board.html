@@ -43,13 +43,14 @@
 
         <nav id="navbar" class="navbar">
             <ul>
-                <li><a class="nav-link  active" href="#">Home</a></li>
+                <li><a class="nav-link  active" href="index.html">Home</a></li>
                 <li><a class="nav-link " href="about.html">About</a></li>
                 <!--          <li><a class="nav-link scrollto" href="#services">Services</a></li>-->
                 <!--          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>-->
                 <!--          <li><a class="nav-link scrollto" href="#team">Team</a></li>-->
                 <li class="dropdown"><a href="journal-home.html"><span>Journals</span> <i class="bi bi-chevron-down"></i></a>
                     <ul>
+                        <li><a href="journal-home.html">Journal Home</a></li>
                         <li><a href="journal-info.html">Journal Information</a></li>
                         <li><a href="aim-scope.html">Aim and Scope</a></li>
                         <li><a href="editorial-board.html">Editorial Board</a></li>
@@ -66,6 +67,8 @@
                     </ul>
                 </li>
                 <li><a class="nav-link" href="contact.html">Contact</a></li>
+                <li><a href="" class="btn btn-outline-info p-2">Create Account</a></li>
+                <li><a href="" class="btn btn-info p-2">Sign In</a></li>
                 <!--          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>-->
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
@@ -77,11 +80,18 @@
 <!-- ======= Hero Section ======= -->
 <section id="hero_about2">
     <div class="hero-container" data-aos="fade-up" data-aos-delay="150">
-        <img src="assets/img/technova/technova_logo.png" alt="" width="10%"  style="padding-top: 150px">
-        <h1 class="mt-2">Journal of Intelligent Systems and Computing</h1>
-        <h2 class="hero_orange" style="color: #ff4a17; font-weight: bold">JISCOM</h2>
+        <div class="d-flex flex-lg-row-reverse flex-column align-items-center justify-content-center" style="padding-top: 120px;">
+            <div class="img col-lg-3">
+                <img src="assets/img/technova/technova_logo.png" alt="" width="200px">
+            </div>
+            <div class="text d-flex flex-column col-lg-9">
+                <h1 class="mt-2" style="width: 100%; font-size: 1.2em;">Journal of Intelligent Systems and Computing</h1>
+                <h1 class="hero_orange" style="color: #ff4a17; text-align: center; font-weight: bold">(JISCOM)</h1>
+            </div>
+        </div>
+
         <marquee direction="left" height="100px" style="color: #ff4a17;" onmouseover="this.stop();" onmouseout="this.start();" )="">
-            <strong>Call for Paper - Volume 1 - Issue 1 - 1 December 2020 (Submission Deadline)</strong>
+            <strong><h3 style="color: greenyellow">Call for Paper - Volume 2 - Issue 1 - 31<sup>st</sup> March 2023 (Submission Deadline)</h3></strong>
         </marquee>
     </div>
 </section><!-- End Hero -->
@@ -97,146 +107,192 @@
                 <p class="fw-bold">Editor In Chief</p>
             </div>
 
-            <div class="row">
-
-                <div class="col-lg-6 col-md-6">
-                    <div class="member" data-aos="fade-up" data-aos-delay="100">
-                        <div class="pic"><img src="assets/img/technova/editor_chief_1.png" class="img-fluid" alt=""></div>
-                        <div class="member-info">
-                            <h4>Abdul Khader Jilani Saudagar</h4>
-                            <span>Imam Mohammad Ibn Saud Islamic University, Saudi Arabia <br><span class="text-info">aksaudagar@imamu.edu.sa</span></span>
-                            <div class="social">
-                                <a href=""><i class="bi bi-twitter"></i></a>
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                            </div>
-                        </div>
+            <div class="row" style="gap: 20px;">
+                <div class="col-lg-12 d-flex align-items-center" style="gap: 20px;">
+                    <div class="img" style="object-fit: cover; height: 100px; width: 100px;">
+                        <img src="assets/img/technova/drjilani.jpeg" class="img-fluid" alt="" width="100%">
+                    </div>
+                    <div class="text d-flex flex-column">
+                        <h5 class="fw-bold">Abdul Khader Jilani Saudagar</h5>
+                        <span>Imam Mohammad Ibn Saud Islamic University, Saudi Arabia <br><span class="text-info">aksaudagar@imamu.edu.sa</span></span>
                     </div>
                 </div>
-
-                <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="member">
-                        <div class="pic"><img src="assets/img/rmpic.png" class="img-fluid" alt=""></div>
-                        <div class="member-info">
-                            <h4>Ramesh C. Poonia</h4>
-                            <span>Amity Institute of Information Technology, Amity University Rajasthan, INDIA <br><span class="text-info">rameshcpoonia@gmail.com</span></span>
-                            <div class="social">
-                                <a href=""><i class="bi bi-twitter"></i></a>
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                            </div>
-                        </div>
+                <div class="col-lg-12 d-flex align-items-center" style="gap: 20px;">
+                    <div class="img" style="object-fit: cover; height: 100px; width: 100px;">
+                        <img src="assets/img/rmpic.png" class="img-fluid" alt="" width="100%">
+                    </div>
+                    <div class="text d-flex flex-column">
+                        <h5 class="fw-bold">Ramesh C. Poonia</h5>
+                        <span>Amity Institute of Information Technology, Amity University Rajasthan, INDIA <br><span class="text-info">rameshcpoonia@gmail.com</span></span>
                     </div>
                 </div>
-
             </div>
 
-        </div>
-    </section>
-    <section class="team section-bg">
-        <div class="container" data-aos="fade-up">
-
-            <div class="section-title">
-<!--                <h2>Team</h2>-->
+            <div class="section-title mt-5">
                 <p>Managing Editors</p>
             </div>
 
-            <div class="row">
-
-                <div class="col-lg-4 col-md-6 mt-5">
-                    <div class="member" data-aos="fade-up" data-aos-delay="100">
-<!--                        <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>-->
-                        <div class="member-info">
-                            <h4>Dr. Mozaherul Hoque Abul Hasanat</h4>
-                            <span>Imam Mohammad Ibn Saud Islamic University, Saudi Arabia<br><span class="text-info">mhhasanat@imamu.edu.sa</span></span>
-                            <div class="social">
-                                <a href=""><i class="bi bi-twitter"></i></a>
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                            </div>
-                        </div>
+            <div class="row" style="gap: 20px;">
+                <div class="col-lg-12 d-flex align-items-center" style="gap: 20px;">
+                    <div class="img" style="object-fit: cover; height: 100px; width: 100px;">
+                        <img src="assets/img/technova/drjilani.jpeg" class="img-fluid" alt="" width="100%">
+                    </div>
+                    <div class="text d-flex flex-column">
+                        <h5 class="fw-bold">Abdul Khader Jilani Saudagar</h5>
+                        <span>Imam Mohammad Ibn Saud Islamic University, Saudi Arabia <br><span class="text-info">aksaudagar@imamu.edu.sa</span></span>
                     </div>
                 </div>
-
-                <div class="col-lg-4 col-md-6 mt-5" data-aos="fade-up" data-aos-delay="200">
-                    <div class="member">
-<!--                        <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>-->
-                        <div class="member-info">
-                            <h4>Dr. Abdul Rauf</h4>
-                            <span>RISE SICS Västerås, Sweden<br><span class="text-info">drraufmalik@gmail.com</span></span>
-                            <div class="social">
-                                <a href=""><i class="bi bi-twitter"></i></a>
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                            </div>
-                        </div>
+                <div class="col-lg-12 d-flex align-items-center" style="gap: 20px;">
+                    <div class="img" style="object-fit: cover; height: 100px; width: 100px;">
+                        <img src="assets/img/rmpic.png" class="img-fluid" alt="" width="100%">
+                    </div>
+                    <div class="text d-flex flex-column">
+                        <h5 class="fw-bold">Ramesh C. Poonia</h5>
+                        <span>Amity Institute of Information Technology, Amity University Rajasthan, INDIA <br><span class="text-info">rameshcpoonia@gmail.com</span></span>
                     </div>
                 </div>
-
-                <div class="col-lg-4 col-md-6 mt-5" data-aos="fade-up" data-aos-delay="200">
-                    <div class="member">
-<!--                        <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>-->
-                        <div class="member-info">
-                            <h4>Santosh Ramkrishna Durugkar</h4>
-                            <span>Amity University Rajasthan INDIA<br> <span class="text-info">santoshdurugkar@gmail.com</span></span>
-                            <div class="social">
-                                <a href=""><i class="bi bi-twitter"></i></a>
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <section class="team section-bg">
-        <div class="container" data-aos="fade-up">
-
-            <div class="section-title">
-                <!--                <h2>Team</h2>-->
-                <p>Associate Editors</p>
             </div>
 
-            <div class="row">
+<!--            <div class="row">-->
 
-                <div class="col-lg-4 col-md-6 mt-5">
-                    <div class="member" data-aos="fade-up" data-aos-delay="100">
-<!--                        <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>-->
-                        <div class="member-info">
-                            <h4>Sandeep Kumar</h4>
-                            <span>Amity University Rajasthan INDIA<br><span class="text-info">sandpoonia@gmail.com</span></span>
-                            <div class="social">
-                                <a href=""><i class="bi bi-twitter"></i></a>
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<!--                <div class="col-lg-6 col-md-6">-->
+<!--                    <div class="member" data-aos="fade-up" data-aos-delay="100">-->
+<!--                        <div class="pic"><img src="assets/img/technova/editor_chief_1.png" class="img-fluid" alt=""></div>-->
+<!--                        <div class="member-info">-->
+<!--                            <h4>Abdul Khader Jilani Saudagar</h4>-->
+<!--                            <span>Imam Mohammad Ibn Saud Islamic University, Saudi Arabia <br><span class="text-info">aksaudagar@imamu.edu.sa</span></span>-->
+<!--                            <div class="social">-->
+<!--                                <a href=""><i class="bi bi-twitter"></i></a>-->
+<!--                                <a href=""><i class="bi bi-facebook"></i></a>-->
+<!--                                <a href=""><i class="bi bi-instagram"></i></a>-->
+<!--                                <a href=""><i class="bi bi-linkedin"></i></a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
 
-                <div class="col-lg-4 col-md-6 mt-5" data-aos="fade-up" data-aos-delay="200">
-                    <div class="member">
-<!--                        <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>-->
-                        <div class="member-info">
-                            <h4>Vijander Singh </h4>
-                            <span>Amity University Rajasthan INDIA<br><span class="text-info">vijan2005@gmail.com</span></span>
-                            <div class="social">
-                                <a href=""><i class="bi bi-twitter"></i></a>
-                                <a href=""><i class="bi bi-facebook"></i></a>
-                                <a href=""><i class="bi bi-instagram"></i></a>
-                                <a href=""><i class="bi bi-linkedin"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<!--                <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">-->
+<!--                    <div class="member">-->
+<!--                        <div class="pic"><img src="assets/img/rmpic.png" class="img-fluid" alt=""></div>-->
+<!--                        <div class="member-info">-->
+<!--                            <h4>Ramesh C. Poonia</h4>-->
+<!--                            <span>Amity Institute of Information Technology, Amity University Rajasthan, INDIA <br><span class="text-info">rameshcpoonia@gmail.com</span></span>-->
+<!--                            <div class="social">-->
+<!--                                <a href=""><i class="bi bi-twitter"></i></a>-->
+<!--                                <a href=""><i class="bi bi-facebook"></i></a>-->
+<!--                                <a href=""><i class="bi bi-instagram"></i></a>-->
+<!--                                <a href=""><i class="bi bi-linkedin"></i></a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--            </div>-->
+
+<!--        </div>-->
+<!--    </section>-->
+<!--    <section class="team section-bg">-->
+<!--        <div class="container" data-aos="fade-up">-->
+
+<!--            <div class="section-title">-->
+<!--&lt;!&ndash;                <h2>Team</h2>&ndash;&gt;-->
+<!--                <p>Managing Editors</p>-->
+<!--            </div>-->
+
+<!--            <div class="row">-->
+
+<!--                <div class="col-lg-4 col-md-6 mt-5">-->
+<!--                    <div class="member" data-aos="fade-up" data-aos-delay="100">-->
+<!--&lt;!&ndash;                        <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>&ndash;&gt;-->
+<!--                        <div class="member-info">-->
+<!--                            <h4>Dr. Mozaherul Hoque Abul Hasanat</h4>-->
+<!--                            <span>Imam Mohammad Ibn Saud Islamic University, Saudi Arabia<br><span class="text-info">mhhasanat@imamu.edu.sa</span></span>-->
+<!--                            <div class="social">-->
+<!--                                <a href=""><i class="bi bi-twitter"></i></a>-->
+<!--                                <a href=""><i class="bi bi-facebook"></i></a>-->
+<!--                                <a href=""><i class="bi bi-instagram"></i></a>-->
+<!--                                <a href=""><i class="bi bi-linkedin"></i></a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="col-lg-4 col-md-6 mt-5" data-aos="fade-up" data-aos-delay="200">-->
+<!--                    <div class="member">-->
+<!--&lt;!&ndash;                        <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>&ndash;&gt;-->
+<!--                        <div class="member-info">-->
+<!--                            <h4>Dr. Abdul Rauf</h4>-->
+<!--                            <span>RISE SICS Västerås, Sweden<br><span class="text-info">drraufmalik@gmail.com</span></span>-->
+<!--                            <div class="social">-->
+<!--                                <a href=""><i class="bi bi-twitter"></i></a>-->
+<!--                                <a href=""><i class="bi bi-facebook"></i></a>-->
+<!--                                <a href=""><i class="bi bi-instagram"></i></a>-->
+<!--                                <a href=""><i class="bi bi-linkedin"></i></a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="col-lg-4 col-md-6 mt-5" data-aos="fade-up" data-aos-delay="200">-->
+<!--                    <div class="member">-->
+<!--&lt;!&ndash;                        <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>&ndash;&gt;-->
+<!--                        <div class="member-info">-->
+<!--                            <h4>Santosh Ramkrishna Durugkar</h4>-->
+<!--                            <span>Amity University Rajasthan INDIA<br> <span class="text-info">santoshdurugkar@gmail.com</span></span>-->
+<!--                            <div class="social">-->
+<!--                                <a href=""><i class="bi bi-twitter"></i></a>-->
+<!--                                <a href=""><i class="bi bi-facebook"></i></a>-->
+<!--                                <a href=""><i class="bi bi-instagram"></i></a>-->
+<!--                                <a href=""><i class="bi bi-linkedin"></i></a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+<!--    <section class="team section-bg">-->
+<!--        <div class="container" data-aos="fade-up">-->
+
+<!--            <div class="section-title">-->
+<!--                &lt;!&ndash;                <h2>Team</h2>&ndash;&gt;-->
+<!--                <p>Associate Editors</p>-->
+<!--            </div>-->
+
+<!--            <div class="row">-->
+
+<!--                <div class="col-lg-4 col-md-6 mt-5">-->
+<!--                    <div class="member" data-aos="fade-up" data-aos-delay="100">-->
+<!--&lt;!&ndash;                        <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>&ndash;&gt;-->
+<!--                        <div class="member-info">-->
+<!--                            <h4>Sandeep Kumar</h4>-->
+<!--                            <span>Amity University Rajasthan INDIA<br><span class="text-info">sandpoonia@gmail.com</span></span>-->
+<!--                            <div class="social">-->
+<!--                                <a href=""><i class="bi bi-twitter"></i></a>-->
+<!--                                <a href=""><i class="bi bi-facebook"></i></a>-->
+<!--                                <a href=""><i class="bi bi-instagram"></i></a>-->
+<!--                                <a href=""><i class="bi bi-linkedin"></i></a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--                <div class="col-lg-4 col-md-6 mt-5" data-aos="fade-up" data-aos-delay="200">-->
+<!--                    <div class="member">-->
+<!--&lt;!&ndash;                        <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>&ndash;&gt;-->
+<!--                        <div class="member-info">-->
+<!--                            <h4>Vijander Singh </h4>-->
+<!--                            <span>Amity University Rajasthan INDIA<br><span class="text-info">vijan2005@gmail.com</span></span>-->
+<!--                            <div class="social">-->
+<!--                                <a href=""><i class="bi bi-twitter"></i></a>-->
+<!--                                <a href=""><i class="bi bi-facebook"></i></a>-->
+<!--                                <a href=""><i class="bi bi-instagram"></i></a>-->
+<!--                                <a href=""><i class="bi bi-linkedin"></i></a>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
 
             </div>
         </div>
