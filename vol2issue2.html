@@ -1,23 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-    <title>Sign In | SCIENCE&TECH</title>
+    <title>Archive | SCIENCE&TECH</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta content="" name="description">
     <meta content="" name="keywords">
-
     <!-- Favicons -->
     <link href="assets/img/technova/technova_logo.png" rel="icon">
     <link href="assets/img/technova/technova_logo.png" rel="apple-touch-icon">
-
     <!-- Google Fonts -->
     <link
             href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
             rel="stylesheet">
-
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -26,13 +23,21 @@
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
     <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
+    <style>
+        .vol li a {
+            color: #ff4a17;
+            cursor: pointer;
+        }
+
+        .vol li a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
-
 <!-- ======= Header ======= -->
 <header id="header" class="fixed-top header-scrolled">
     <div class="container d-flex align-items-center justify-content-between">
@@ -43,16 +48,16 @@
 
         <nav id="navbar" class="navbar">
             <ul>
-                <li><a class="nav-link" href="index.html">Home</a></li>
-                <li><a class="nav-link" href="about.html">About</a></li>
+                <li><a class="nav-link  " href="index.html">Home</a></li>
+                <li><a class="nav-link " href="about.html">About</a></li>
                 <!--          <li><a class="nav-link scrollto" href="#services">Services</a></li>-->
                 <!--          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>-->
                 <!--          <li><a class="nav-link scrollto" href="#team">Team</a></li>-->
-                <li><a href="journal-home.html"><span>Journals</span></a></li>
+                <li ><a class="active" href="journal-home.html"><span>Journals</span></a>
+                </li>
                 <li><a class="nav-link" href="contact.html">Contact</a></li>
                 <li><a href="registration.html" class="btn btn-outline-info p-2">Create Account</a></li>
-                <li><a class="active" href="sign-in.html" class="btn btn-info p-2">Sign In</a></li>
-                <!--          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>-->
+                <li><a href="sign-in.html" class="btn btn-info p-2">Sign In</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
@@ -77,56 +82,56 @@
             <strong><h3 style="color: greenyellow">Call for Paper - Volume 2 - Issue 1 - 31<sup>st</sup> March 2023 (Submission Deadline)</h3></strong>
         </marquee>
     </div>
-</section><!-- End Hero --><!-- End Hero -->
+</section><!-- End Hero -->
 
-<main id="main">
+<!--Sub -header-->
+<header id="header2" class="header-scrolled bg-dark">
+    <div class="container d-flex align-items-center justify-content-between px-0 py-4">
 
-    <!-- ======= Signin Section ======= -->
-    <section class="contact">
-        <div class="container" data-aos="fade-up">
+        <nav id="navbar2" class="navbar">
+            <ul class="" style="overflow: auto">
+                <li><a class="nav-link" href="journal-info.html">Journal Information</a></li>
+                <span style="color: #676767">|</span>
+                <li><a class="nav-link" href="aim-scope.html">Aim and Scope</a></li>
+                <span  style="color: #676767">|</span>
+                <li><a class="nav-link" href="editorial-board.html">Editorial Board</a></li>
+                <span  style="color: #676767">|</span>
+                <li><a class="nav-link" href="guidelines-author.html">Guidelines for Authors</a></li>
+                <span  style="color: #676767">|</span>
+                <li><a href="guidelines-reviewer.html">Guidelines for Reviewers</a></li>
+                <span  style="color: #676767">|</span>
+                <li><a href="article-submit.html">Submission</a></li>
+                <span  style="color: #676767">|</span>
+                <li><a href="archive.html">Archive</a></li>
+            </ul>
+            <!--            <i class="bi bi-list mobile-nav-toggle2"></i>-->
+        </nav><!-- .navbar -->
 
-            <div class="section-title">
-                <h2>Sign In</h2>
-                <p>Welcome To SCIENCE&TECH</p>
-            </div>
+    </div>
+</header>
 
-                <div class="col-lg-12 mt-4 mt-lg-0">
-                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                        <div class="row">
-                            <div class="col-md-12 form-group mt-3 mt-md-0">
-                                <label for="email" class="my-3">Email Address</label>
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                            </div>
-                        </div>
-                        <div class="form-group mt-3">
-                            <label for="password" class="my-3">Password</label>
-                            <input type="password" class="form-control" name="password" id="password" placeholder="password" required>
-                        </div>
-                        <div class="form-group mt-3 d-flex justify-content-end">
-                            <a href="#">Forgot Password?</a>
-                        </div>
-                        <div class="my-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit">Sign In</button>
-                        </div>
-                        <div class="form-group mt-3">
-                            <hr>
-                        </div>
-                        <div class="form-group mt-3">
-                            <span>Don't have an account?<a href="registration.html">  Sign Up!</a></span>
-                        </div>
-                    </form>
-                </div>
-
+<!-- ======= Arcieve ======= -->
+<section id="archieve" class="archieve">
+    <div class="container" data-aos="fade-up">
+        <div class="top-text d-flex justify-content-between align-items-center">
+            <h3 class="text-style">Volume 2 | Issue 2</h3>
+            <h3 class="text-style">January - December 2023</h3>
         </div>
-    </section>
-    <!-- End Signin Section -->
-
-</main><!-- End #main -->
+        <hr>
+        <ul class="mt-0 pt-0 vol">
+            <li><a href="">A Review of Regression Models in Machine Learning</a></li>
+            <li><a href="">Prediction and Analysis of Covid-19 with various
+                Machine Learning algorithms
+            </a></li>
+            <li><a href="">Copy-Move Forgery Detection Based on Euclidean Distance and
+                Texture Feature Analysis</a></li>
+            <li><a href="">A Zigbee Based Framework for Low Power Voice Communication
+                System</a></li>
+            <li><a href="">Query-Based Image Retrieval using SVM</a></li>
+        </ul>
+    </div> <!-- End of container-->
+</section>
+<!-- End Contact Section -->
 
 <!-- ======= Footer ======= -->
 <footer id="footer">
@@ -197,12 +202,12 @@
         </div>
 
     </div>
-</footer><!-- End Footer -->
-
+</footer>
+<!-- End Footer -->
 <div id="preloader"></div>
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-        class="bi bi-arrow-up-short"></i></a>
-
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+</a>
 <!-- Vendor JS Files -->
 <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
 <script src="assets/vendor/aos/aos.js"></script>
@@ -211,11 +216,8 @@
 <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 <script src="assets/vendor/php-email-form/validate.js"></script>
-
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
-
-</body>
 </body>
 
 </html>
