@@ -159,6 +159,21 @@
     }
   }, true)
 
+  on('click', '.scrollto', function(e) {
+    if (select(this.hash)) {
+      e.preventDefault()
+
+      let navbar = select('#navbar2')
+      if (navbar.classList.contains('navbar-mobile')) {
+        navbar.classList.remove('navbar-mobile')
+        let navbarToggle = select('.mobile-nav-toggle')
+        navbarToggle.classList.toggle('bi-list')
+        navbarToggle.classList.toggle('bi-x')
+      }
+      scrollto(this.hash)
+    }
+  }, true)
+
   /**
    * Scroll with ofset on page load with hash links in the url
    */
@@ -284,17 +299,3 @@
   new PureCounter();
 
 })()
-
-//Navbar 2 (Journal section) Modal Button
-
-function btnVis(){
-  if(window.innerWidth<=1631)
-  {
-    document.getElementById('navbar2Btn').classList.remove('d-none');
-  }
-  else{
-    document.getElementById('navbar2Btn').classList.add('d-none');
-  }
-}
-
-window.addEventListener("resize", btnVis);
