@@ -284,3 +284,17 @@
   new PureCounter();
 
 })()
+
+//Navbar 2 (Journal section) Modal Button
+
+function btnVis(){
+  if(window.innerWidth<=1631)
+  {
+    document.getElementById('navbar2Btn').classList.remove('d-none');
+  }
+  else{
+    document.getElementById('navbar2Btn').classList.add('d-none');
+  }
+}
+
+window.addEventListener("resize", btnVis);
