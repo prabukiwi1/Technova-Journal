@@ -34,6 +34,18 @@
         .vol li a:hover {
             text-decoration: underline;
         }
+
+        .issue-expand{
+            border-radius: 20px;
+            background-color: #efefef;
+        }
+        .vol span{
+            cursor: pointer;
+            color: #ff4a17;
+        }
+        .vol span:hover{
+            text-decoration: underline;
+        }
     </style>
 </head>
 
@@ -127,18 +139,55 @@
         </div>
         <hr>
         <ul class="mt-0 pt-0 vol">
-            <li><a href="vol2issue2.html">December, Issue 1</a></li>
-<!--            <li><a href="">Vol 2, Issue 1</a></li>-->
+            <li><span onclick="{
+                if(document.getElementById('i1y21').classList.contains('d-none')){
+                    document.getElementById('i1y21').classList.remove('d-none');
+                }
+                else{
+                    document.getElementById('i1y21').classList.add('d-none');
+                }
+            }">December, Issue 1</span></li>
         </ul>
-
+        <div class="issue-expand mt-2 mb-4 p-2 d-none" id="i1y21">
+            <ul class="mt-0 pt-0 vol">
+                <li><a href="https://doi.org/10.51682/JISCOM.00202005.2021" target="_blank">A Review of Regression Models in Machine Learning</a></li>
+                <li><a href="https://doi.org/10.51682/JISCOM.00202004.2021"  target="_blank">Prediction and Analysis of Covid-19 with various
+                    Machine Learning algorithms
+                </a></li>
+                <li><a href="https://doi.org/10.51682/JISCOM.00202003.2021"  target="_blank">Copy-Move Forgery Detection Based on Euclidean Distance and
+                    Texture Feature Analysis</a></li>
+                <li><a href="https://doi.org/10.51682/JISCOM.00202002.2021"  target="_blank">A Zigbee Based Framework for Low Power Voice Communication
+                    System</a></li>
+                <li><a href="https://doi.org/10.51682/JISCOM.00202001.2021"  target="_blank">Query-Based Image Retrieval using SVM</a></li>
+            </ul>
+        </div>
         <div class="top-text d-flex justify-content-between align-items-center">
             <h3 class="text-style">Volume 1</h3>
             <h3 class="text-style">January - December 2020</h3>
         </div>
         <hr>
-        <ul class="mt-0 pt-0 vol">
-            <li><a href="">December, Issue 1</a></li>
-        </ul>
+            <ul class="mt-0 pt-0 vol">
+                <li><span onclick="{
+                if(document.getElementById('i1y20').classList.contains('d-none')){
+                    document.getElementById('i1y20').classList.remove('d-none');
+                }
+                else{
+                    document.getElementById('i1y20').classList.add('d-none');
+                }
+            }">December, Issue 1</span></li>
+            </ul>
+            <div class="issue-expand mt-2 mb-4 p-2 d-none" id="i1y20">
+                <ul class="mt-0 pt-0 vol">
+                    <li><a href="https://doi.org/10.51682/JISCOM.00101001.2020" target="_blank">A Literature Review on Device-to-Device Data Exchange Formats
+                        for IoT Applications</a></li>
+                    <li><a href="https://doi.org/10.51682/JISCOM.00101002.2020"  target="_blank">A Compendium of Classification Techniques, Tools and Evaluation Datasets
+                        for Twitter Sentiment Analysis
+                    </a></li>
+                    <li><a href="https://doi.org/10.51682/JISCOM.00101003.2020"  target="_blank">RHPF for Solving Ordinary Differential Equations</a></li>
+                    <li><a href="https://doi.org/10.51682/JISCOM.00101004.2020"  target="_blank">Comparative Study of Open Source Software Quality Models </a></li>
+                    <li><a href="https://doi.org/10.51682/JISCOM.00101005.2020"  target="_blank">Service Oriented Cloud Computing- The State of the Art</a></li>
+                </ul>
+            </div>
 
     </div> <!-- End of container-->
 </section>
@@ -156,9 +205,11 @@
                         <p>
                             71-75 Shelton Street <br> Convent Garden, London <br>
                             WC2H 9JQ, United Kingdom<br><br>
-                            <strong>Business Telephone Number:</strong> 0203 540 5078<br>
-                            <strong>For International users:</strong> +44 203 540 5078<br>
-                            <strong>Email:</strong> support@scienceandtech.co.uk<br>
+                            <strong>Business Telephone Number: <br> </strong> <span style="color: #ff6d43">0203 540 5078</span><br>
+                            <strong>For International users: <br> </strong> <span style="color: #ff6d43">+44 203 540 5078</span><br>
+                        <form action="mailto:support@scienceandtech.co.uk">
+                            <button type="submit"  style="background-color: transparent; border: none; font-size: 1.1em"><strong class="text-light">Email: </strong><span class="formbtn">support@scienceandtech.co.uk</span></button>
+                        </form>
                         </p>
                         <div class="social-links mt-3">
                             <a href="https://twitter.com/Technovapublish" class="twitter"><i class="bx bxl-twitter"></i></a>
