@@ -299,3 +299,19 @@
   new PureCounter();
 
 })()
+
+//2nd Navbar
+
+let ham = document.querySelector(".nvham");
+ham.onclick = function (){
+  nav2 = document.querySelector(".nav-bar");
+  nav2.classList.toggle("active");
+  let navCont = document.getElementById("nav2");
+  if(nav2.classList.contains("active"))
+  {
+    navCont.style.marginBottom = "390px";
+  }
+  else{
+    navCont.style.marginBottom = "0px";
+  }
+}
